@@ -1,4 +1,21 @@
-h1
+body {
+	font-family: Consolas, serif;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+h2
 {
-    color:red
+    font-family: Arial, serif;
+    text-align: left;
+    font-size: 75px;
+}
+
+.Test
+{
+    background-color: red;
+    font-family: Times, "Times New Roman", serif;
+    text-align: right;
 }

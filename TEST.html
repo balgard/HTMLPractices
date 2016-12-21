@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
-  <body>
-      <h1>X</h1>
-  </body>
+<head>
+	<title>First Title</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+     
+</head>
+<body>
+    
+	<h1 id = "h1">I don't know what to type</h1>
+    <script type = "text/javascript">
+       function test()
+         {
+             confirm("Ready to die?");
+             var age = prompt("What\'s your age");
+             if (age != null)
+             {
+                 var element = document.getElementById("h1");
+                 var newElement = element.innerHTML.concat(element.innerHTML.substring(element.innerHTML.length, element.innerHTML.length)) + " ";
+                 element.innerHTML = element.innerHTML.concat(newElement,age);
+            }
+         }
+         test()
+    </script>
+    <h2>Testing font changes.</h2>
+    <div class = "Test">
+    <p>Checking Background Stuff</p>
+    </div> 
+</body>
 </html>

@@ -12,7 +12,7 @@
     <script type = "text/javascript">
        function test()
          {
-             confirm("Ready to die?");
+             confirm("?");
              var age = prompt("What\'s your age");
              if (age != null)
              {
@@ -21,7 +21,17 @@
                  element.innerHTML = element.innerHTML.concat(newElement,age);
             }
          }
-         test()
+        function setPlayerInformation()
+        {
+            var name = prompt("What is your name?");
+            var class = prompt("Class?");
+        }
+        
+        var Player =
+            {
+              this.setPlayerInformation()  
+            };
+        test()
     </script>
     <h2>Testing font changes.</h2>
     <div class = "Test">

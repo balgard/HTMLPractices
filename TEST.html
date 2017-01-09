@@ -9,6 +9,19 @@
 <body>
     
 	<h1 id = "h1">I don't know what to type</h1>
+    
+    <h2>Testing font changes.</h2>
+    <div class = "Test">
+    <p>Checking Background Stuff</p>
+    </div> 
+    <div2>
+        <p2 id = "PlayerName">Name Here</p2>
+    </div2>
+    <div3>
+        <br />
+        <p3 id = "PlayerClass">Class Here</p3>
+    </div3>
+</body>
     <script type = "text/javascript">
        function test()
          {
@@ -21,21 +34,24 @@
                  element.innerHTML = element.innerHTML.concat(newElement,age);
             }
          }
-        function setPlayerInformation()
-        {
-            var name = prompt("What is your name?");
-            var class = prompt("Class?");
-        }
-        
         var Player =
             {
-              this.setPlayerInformation()  
+                name: "",
+                Class: "",
+                health: 0,
+                mana: 0,
+                inventory: [],
+                equipment: [],
+                setDescritption: function()
+                {
+                    this.name = prompt("What is your name?");
+                    this.Class = prompt("Class?");
+                    var element = document.getElementById("PlayerClass");
+                    element.innerHTML = "Class: " + this.Class;
+                    document.getElementById("PlayerName").innerHTML = "Name: " + this.name;  
+                    
+                }
             };
-        test()
+        Player.setDescritption();
     </script>
-    <h2>Testing font changes.</h2>
-    <div class = "Test">
-    <p>Checking Background Stuff</p>
-    </div> 
-</body>
 </html>

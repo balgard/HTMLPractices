@@ -49,21 +49,22 @@
                     this.name = prompt("What is your name?");
                     document.getElementById("PlayerName").innerHTML = "Name: " + this.name;  
                 },
-                mageChosen: function()
-                {
-                    this.Class = "Mage";
-                    document.getElementById("div3").removeChild(document.getElementById("mage"));
-                    document.getElementById("div3").removeChild(document.getElementById("warrior"));
-                    return this.Class;
-                },
-                warriorChosen: function()
-                {
-                    this.Class = "Warrior";
-                    document.getElementById("div3").removeChild(document.getElementById("mage"));
-                    document.getElementById("div3").removeChild(document.getElementById("warrior"));
-                    return this.Class;
-                },
             };
+        function mageChosen()
+        {
+            Player.Class = "Mage";
+            document.getElementById("PlayerClass").innerHTML = "Class: Mage";
+            document.getElementById("div3").removeChild(document.getElementById("mage"));
+            document.getElementById("div3").removeChild(document.getElementById("warrior"));
+        }
+        function warriorChoesn()
+        {
+            Player.Class = "Warrior";
+            document.getElementById("PlayerClass").innerHTML = "Class: Warrior";
+            document.getElementById("div3").removeChild(document.getElementById("mage"));
+            document.getElementById("div3").removeChild(document.getElementById("warrior"));
+        }
+        
         Player.setDescritption();
         
     </script>

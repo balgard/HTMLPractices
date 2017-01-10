@@ -17,11 +17,11 @@
     <div2>
         <p2 id = "PlayerName">Name Here</p2>
     </div2>
-    <div3>
+    <div3 id = "div3">
         <br />
         <p3 id = "PlayerClass">Class Here</p3>
-        <button  id = mage, onclick="mageChosen()">Mage</button>
-        <button id = warrior, onclick="warriorChosen()">Warrior</button>
+        <button  id = mage onclick = "mageChosen()">Mage</button>
+        <button id = warrior onclick = "warriorChosen()">Warrior</button>
     </div3>
 </body>
     <script type = "text/javascript">
@@ -52,11 +52,16 @@
                 mageChosen: function()
                 {
                     this.Class = "Mage";
-                    document.getElementById("mage").
+                    document.getElementById("div3").removeChild(document.getElementById("mage"));
+                    document.getElementById("div3").removeChild(document.getElementById("warrior"));
+                    return this.Class;
                 },
                 warriorChosen: function()
                 {
                     this.Class = "Warrior";
+                    document.getElementById("div3").removeChild(document.getElementById("mage"));
+                    document.getElementById("div3").removeChild(document.getElementById("warrior"));
+                    return this.Class;
                 },
             };
         Player.setDescritption();

@@ -20,6 +20,8 @@
     <div3>
         <br />
         <p3 id = "PlayerClass">Class Here</p3>
+        <button  id = mage, onclick="mageChosen()">Mage</button>
+        <button id = warrior, onclick="warriorChosen()">Warrior</button>
     </div3>
 </body>
     <script type = "text/javascript">
@@ -45,13 +47,19 @@
                 setDescritption: function()
                 {
                     this.name = prompt("What is your name?");
-                    this.Class = prompt("Class?");
-                    var element = document.getElementById("PlayerClass");
-                    element.innerHTML = "Class: " + this.Class;
                     document.getElementById("PlayerName").innerHTML = "Name: " + this.name;  
-                    
-                }
+                },
+                mageChosen: function()
+                {
+                    this.Class = "Mage";
+                    document.getElementById("mage").
+                },
+                warriorChosen: function()
+                {
+                    this.Class = "Warrior";
+                },
             };
         Player.setDescritption();
+        
     </script>
 </html>
